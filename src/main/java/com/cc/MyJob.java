@@ -11,7 +11,8 @@ import java.util.Date;
  */
 public class MyJob implements Job {
 
-    public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
+    public void execute(JobExecutionContext context) throws JobExecutionException {
+        // context 获取 jobdetail 传过来的参数
         System.out.println("hello world");
     }
 }
